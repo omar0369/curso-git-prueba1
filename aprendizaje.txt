@@ -18,3 +18,9 @@ Conceptos aprendidos:
     - git branch -M main
     - git remote add origin "https://github.com/usuario/repositorio.git"
     - git push -u origin main
+
+* Cambiar de rama (ejempo de master a main, pasando el historial de master a la nueva rama main)
+    - git branch -m master main (se crea la rama main y se le pasa el historial de master)
+    - git push -u origin main (se indica el nuevo origin de la nueva rama)
+    - git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main (cambiar el HEAD actual a la nueva rama main)
+    - git push origin --delete master (una vez realiado el cambio de la rama desde el repositorio en GitHub, se uede eliminar la rama master)
