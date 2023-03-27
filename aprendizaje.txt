@@ -37,9 +37,9 @@ Conceptos aprendidos:
             *.log
         3.- Indicando excepciones de algún tipo de archivo
             !producción.log
-        4.- Ignorar los archivos terminados en .txt dentro de la carpeta doc, pero no en sus subcarpetas
+        4.- Ignorar los archivos terminados en .txt dentro de la carpeta doc, pero no en sus subcarpetas:
             doc/*.txt
-        5.- Ignorar los archivos terminados en .txt dentro de la carpeta doc y también en sus subcarpetas
+        5.- Ignorar los archivos terminados en .txt dentro de la carpeta doc y también en sus subcarpetas:
             doc/**/*.txt
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
