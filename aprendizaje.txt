@@ -97,4 +97,17 @@ Conceptos aprendidos:
         -Para realizar la fusión se usa el siguiente comando:
             git merge 'rama-secundaria'
 
-    2.- 
+* Cambios:
+    Se pueden agregar cambios al último commit sin la necesidad de crear uno nuevo
+
+        -Sin editar el mensaje del último commit:
+            git commit --amend --no-edit
+
+        - Editando el mensaje del último commit:
+            git commit --ammend -m "nuevo mensaje para el último commit"
+
+        - Eliminar el último commit:
+            git reset --hard HEAD~1 
+
+        - Cambiar a un commit en particular:
+            git checkout id-commit
