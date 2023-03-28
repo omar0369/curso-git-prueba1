@@ -1,1 +1,1 @@
-console.log("Aprendiendo git y gihub")
+console.log("Aprendiendo Git y GitHub")
