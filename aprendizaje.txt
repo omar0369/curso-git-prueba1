@@ -89,4 +89,12 @@ Conceptos aprendidos:
 
     
     1.- Fusión de ramas
-        
+        - Es necesario colocarse en la rama padre (la que absorberá el nuevo contenido) y luego fusionar
+        - Existen dos posibles escenarios para realizar la fusión de ramas:
+            a) Fast-Forward: Cuando dos ramas no comparten archivos en común, no existen conflictos por resolver
+            b) Manual-merge: Cuando dos ramas sí tienen archivos en común y a éstos se les realizaron cambios, por tanto se deben resolver dichos confilctos de forma manual
+
+        -Para realizar la fusión se usa el siguiente comando:
+            git merge 'rama-secundaria'
+
+    2.- 
