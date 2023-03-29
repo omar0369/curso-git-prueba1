@@ -111,3 +111,56 @@ Conceptos aprendidos:
 
         - Cambiar a un commit en particular:
             git checkout id-commit
+
+* Historial:
+    - Mostrar todo el historial de cambios
+        git log
+    
+    - Mostrar una sola línea por cambio
+        git log --oneline
+
+    - Guardar el log en una ruta y archivo especificado
+        git log > commits.txt
+
+    - Mostrar el historial con el formato que se especifique
+        git log --pretty=format "%h - %an, %ar : %s"
+
+    - Mostrar los 'n' cambios más recientes
+        git log -n
+
+    - Muestra los cambios realizados después de la fecha especificada
+        git log --after="2023-07-07 00:00:00"
+
+    - Mostrar los cambios realizados antes de la fecha especificada
+        git log --before="2023-07-07 00:00:00"
+
+    - Mostrar los cambios realizados en el rango de fechas especificada
+        git log --after="2023-07-07 00:00:00" --before="2023-08-07 00:00:00"
+
+    - Mostrar todo el registro de acciones del log incluyendo inserciones, cambios, eliminaciones, fusiones, etc
+        git reflog
+
+    - Mostrar diferencias entre el 'working directory' y el 'staging area'
+        git diff
+
+    - Mostrar de forma gráfica en la terminal el registro almacenado en el log
+        git log --oneline --graph --all
+
+* Reseteo del historial:
+    - Mostrar los archivos nuevos (no trackeados), borrados o editados
+        git status
+
+    - Borrar HEAD
+        git reset --soft
+
+    - Borrar HEAD y Staging
+        git reset --mixed
+
+    - Borrar HEAD, Staging y Working Directory
+        git reset --hard
+
+    - Deshacer todos los cambios después del commit indicado, preservando los cambios localmente
+        git reset 'id-commit'
+
+    - Desechar todo el historial y regresar al commit especificado
+        git reset --hard 'id-commit'
