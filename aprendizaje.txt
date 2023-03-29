@@ -104,7 +104,7 @@ Conceptos aprendidos:
             git commit --amend --no-edit
 
         - Editando el mensaje del último commit:
-            git commit --ammend -m "nuevo mensaje para el último commit"
+            git commit --amend -m "nuevo mensaje para el último commit"
 
         - Eliminar el último commit:
             git reset --hard HEAD~1 
@@ -164,3 +164,58 @@ Conceptos aprendidos:
 
     - Desechar todo el historial y regresar al commit especificado
         git reset --hard 'id-commit'
+
+* Resetar un repositorio: (es poco usual)
+    Es útil cuando se quiera dejar un repositorio como si se acabara de crear. Para ello se debe hacer lo siguiente:
+        cd carpeta-de-repositorio
+        mv .git/config ~/saved_git_config
+        rm -rf .git
+        git init
+        git branch -M main
+        git add .
+        git commit -m "Commit inicial"
+        mv ~/saved_git_config .git/config
+        git push --force origin main
+
+* Orígenes remotos de un repositorio
+    - Mostrar los orígenes remotos del repositorio actual
+        git remote
+
+    - Mostrar los orígenes remotos con detalle
+        -git remote -v
+
+    - Agregar un origen remoto
+        git remote add 'nombre-orígen' https://github.com/usuario/repositorio.git
+
+    - Renombrar un origen remoto
+        git remote rename 'nombre-viejo' 'nombre-nuevo'
+    
+    - Eliminar un origen remoto
+        git remote remove 'nombre-orígen'
+
+    - Descargar una rama remota a local diferente a la principal
+        git checkout --track -b 'rama-remota' origin/rama-remota
+
+* Etiquetas: (Permiten agregar un número de versión)
+    - Listar etiquetas existentes:
+        git tag
+
+    - Crear una etiqueta:
+        git tag 'número-versión'
+
+    - Eliminar una etiqueta:
+        git tag -d 'número-versión'
+
+    - Mostrar información de una etiqueta
+        git show 'número-versión'
+
+    - Sincronizando la etiqueta del repositorio local al remoto (se usa al crear por primera vez una etiqueta)
+        git add .
+        git tag v1.0.0
+        git commit -m "v1.0.0"
+        git push origin 'número-versión'
+
+    - Generando una etiqueta anotada (con mensaje de commit) (alternativa al método anterior)
+        git add .
+        git tag -a "v1.0.0" -m "Mensaje de la etiqueta"
+        git push --tags
