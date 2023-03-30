@@ -68,11 +68,14 @@ Conceptos aprendidos:
     - Crear una rama y cambiarte a ella:
         git checkout -b 'nombre-rama'
 
-    - Eliminar una rama:
+    - Eliminar una rama local:
         git branch -d 'nombre-rama'
 
-    - Eliminar una rama de forma forzada:
+    - Eliminar una rama local de forma forzada:
         git branch -D 'nombre-rama'
+
+    - Eliminar una rama remota:
+        git push origin --delete 'nombre-rama-remota'
 
     - Listar todas las ramas del repositorio:
         git branch
