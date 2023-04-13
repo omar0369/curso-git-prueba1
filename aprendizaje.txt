@@ -14,7 +14,7 @@ Conceptos aprendidos:
     - Remote: Es ya el repositorio que se ecuentra en la red y en dónde estarán almacenados nuestros archivos
         5.- git push (si no se cambia de rama basta con ésta instrucción para cargar nuevos cambios)
 
-* Crear una nueva rama y establecerla como principal
+* Crear una nueva rama y establecerla como principal:
     - git branch -M main
 
 * Si ya existe el repositorio:
@@ -22,7 +22,7 @@ Conceptos aprendidos:
     - git remote add origin "https://github.com/usuario/repositorio.git"
     - git push -u origin main
 
-* Cambiar de rama (ejempo de master a main, pasando el historial de master a la nueva rama main)
+* Cambiar de rama (ejempo de master a main, pasando el historial de master a la nueva rama main):
     - git branch -m master main (se crea la rama main y se le pasa el historial de master)
     - git push -u origin main (se indica el nuevo origin de la nueva rama)
     - git symbolic-ref refs/remotes/origin/HEAD refs/remotes/origin/main (cambiar el HEAD actual a la nueva rama main)
