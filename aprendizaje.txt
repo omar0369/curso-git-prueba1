@@ -8,7 +8,7 @@ Conceptos aprendidos:
         2.- git commit -m "mensaje descriptivo del cambio realizado" (se agregan los cambios de la etapa anterior al HEAD de git en Local)
 
     - Commited: Es la etapa donde se encuentran los cambios finales que se enviarán al repositorio ya en línea
-        3.- git remote add origin "https://github.com/usuario/dirección-web-del-repositorio.com" (agregar el repositorio principal a dónde serán cargados los archivos desde nuestro local)
+        3.- git remote add origin "https://github.com/usuario/dirección-web-del-repositorio.git" (agregar el repositorio principal a dónde serán cargados los archivos desde nuestro local)
         4.- git push -u origin master (indicar la rama a la que serán cargados los archivos desde nuestro local)
 
     - Remote: Es ya el repositorio que se ecuentra en la red y en dónde estarán almacenados nuestros archivos
